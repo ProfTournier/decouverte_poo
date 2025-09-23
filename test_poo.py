@@ -13,7 +13,7 @@ class Personnage:
     self.vie=self.vie-nbPoint
   def boirePotion (self):
     if self.potions>0:
-        self.vie=self.vie+1
+        self.vie=self.vie+2
         self.potions-=1
 
 def game():
