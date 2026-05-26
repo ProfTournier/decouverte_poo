@@ -1,4 +1,5 @@
 import random
+
 class Personnage:
   def __init__(self, nbreDeVie, nbreDePotions):
     self.vie=nbreDeVie
@@ -7,9 +8,9 @@ class Personnage:
     return self.vie
   def perdVie (self):
     if random.random()>0.5:
-      nbPoint = 1
+      nbPoint = 5
     else :
-      nbPoint = 2
+      nbPoint = 15
     self.vie=self.vie-nbPoint
   def boirePotion (self):
     if self.potions>0:
@@ -35,3 +36,5 @@ def game():
   else :
     msg = "Les deux combattants sont morts en même temps"
   return msg
+
+#ajouter davantage de fonctionnalités
